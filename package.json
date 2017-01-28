@@ -1,0 +1,13 @@
+{
+  "name": "dirty-strings-injector",
+  "version": "0.1.0",
+  "description": "Container for copying dirty-strings for testing",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "node ./bundle.js",
+    "clean-bundle": "node ./bundle.js -D",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Caleb Morris <caleb.morris.g@gmail.com>",
+  "license": "MIT"
+}
