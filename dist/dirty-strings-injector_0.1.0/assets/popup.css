@@ -1,0 +1,91 @@
+/*body {
+  font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 100%;
+}*/
+html,body {
+  overflow: auto;
+}
+.page {
+  overflow: hidden;
+}
+#status {
+  /* avoid an excessively wide status text */
+  white-space: pre;
+  text-overflow: ellipsis;
+  /*overflow: hidden;*/
+  max-width: 800px;
+}
+
+.icon {
+    display: inline-block;
+    margin: 20px;
+    font-size: 28px;
+}
+
+.hidden {
+  display: none;
+  max-width: 0px;
+  max-height: 0px;
+}
+
+.spin {
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  color: red;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+.spin-2 {
+  -webkit-animation: spin-2 2s infinite linear;
+  animation: spin-2 2s infinite linear;
+  color: green;
+}
+@-webkit-keyframes spin-2 {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+
+
+.container {
+  min-width: 200px;
+  max-width: 600px;
+  padding: 4px 8px;
+}
+
+.row {
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+  width: 100%;
+  align-items: stretch;
+}
+.row:nth-child(1) {
+  border-top-width: 0px;
+}
+.row:nth-last-child(1) {
+  border-bottom-width: 0px;
+}
+
+.dirty-text-button {
+  margin: 4px;
+}
+.dirty-text-text {
+  margin: 4px;
+  flex-grow: 3;
+  overflow: auto;
+  white-space: nowrap;
+}
+.dirty-row-count {
+  margin: 4px;
+  white-space: nowrap;
+}
