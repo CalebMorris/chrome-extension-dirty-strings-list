@@ -1,16 +1,26 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
+  "name": "Dirty String Injector",
 
-  "description": "This extension shows a Google Image search result for the current page",
+  "description": "This is an extension that displays a list of dirty strings to help test software by using strings that are known to cause problems.",
 
   "version": "0.1",
 
   "browser_action": {
-    "default_icon": "./assets/icon.png",
+    "default_icon": {
+      "16": "./assets/Dirty-Copy-Icon16.png",
+      "48": "./assets/Dirty-Copy-Icon48.png",
+      "128": "./assets/Dirty-Copy-Icon128.png"
+    },
     "default_popup": "./assets/popup.html",
-    "default_title": "Click here!"
+    "default_title": "Dirty String Copier"
+  },
+
+  "icons": {
+    "16": "./assets/Dirty-Copy-Icon16.png",
+    "48": "./assets/Dirty-Copy-Icon48.png",
+    "128": "./assets/Dirty-Copy-Icon128.png"
   },
 
   "permissions": [
